@@ -12,7 +12,7 @@ const Home = () => {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Full Stack Developer</span>
             <h1 className="h1 mb-6">
-              Hello I'm <br />
+              Hello I&apos;m <br />
               <span className="text-accent">Mohammad Zaytoun</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
@@ -41,7 +41,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Stats/>
+      <Stats />
     </section>
   );
 };
