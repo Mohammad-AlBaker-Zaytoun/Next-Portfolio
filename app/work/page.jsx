@@ -20,18 +20,13 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "Fullstack",
-    title: "Pancake Paradise",
-    description: "Beautiful landing page for a pancake shop startup.",
-    stack: [
-      { name: "Next.Js" },
-      { name: "Html 5" },
-      { name: "Tailwind Css" },
-      { name: "Javascript" },
-    ],
-    image: "/assets/work/panpar.png",
-    live: "https://pancake-world.vercel.app",
-    github: "https://github.com/Mohammad-AlBaker-Zaytoun/pancake-world",
+    category: "Backend",
+    title: "Flyesim",
+    description: "Esim services provider.",
+    stack: [{ name: "Node.Js" }, { name: "MongoDB" }],
+    image: "/assets/work/fe.png",
+    live: "https://flyesim.net",
+    github: "https://flyesim.net",
   },
   {
     num: "02",
@@ -94,15 +89,21 @@ const projects = [
     live: "https://github.com/Mohammad-AlBaker-Zaytoun/Prayers-API",
     github: "https://github.com/Mohammad-AlBaker-Zaytoun/Prayers-API",
   },
+
   {
     num: "07",
-    category: "Backend",
-    title: "Flyesim",
-    description: "Esim services provider.",
-    stack: [{ name: "Node.Js" }, { name: "MongoDB" }],
-    image: "/assets/work/fe.png",
-    live: "https://flyesim.net",
-    github: "https://flyesim.net",
+    category: "Fullstack",
+    title: "Pancake Paradise",
+    description: "Beautiful landing page for a pancake shop startup.",
+    stack: [
+      { name: "Next.Js" },
+      { name: "Html 5" },
+      { name: "Tailwind Css" },
+      { name: "Javascript" },
+    ],
+    image: "/assets/work/panpar.png",
+    live: "https://pancake-world.vercel.app",
+    github: "https://github.com/Mohammad-AlBaker-Zaytoun/pancake-world",
   },
 ];
 
