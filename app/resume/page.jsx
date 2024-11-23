@@ -1,14 +1,6 @@
 "use client";
 
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaNodeJs,
-  FaJava,
-  FaPhp,
-} from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaNodeJs, FaJava, FaPhp } from "react-icons/fa";
 
 import {
   SiTailwindcss,
@@ -59,6 +51,79 @@ const about = {
     {
       fieldName: "Langauges",
       fieldValue: "English, Arabic",
+    },
+  ],
+};
+
+const certifications = {
+  items: [
+    {
+      institution: "Cisco Networking Academy",
+      certificate:
+        "NDG Linux Unhatched course in the Cisco  Working in group  Public Speaking  Networking Academy",
+    },
+    {
+      institution: "Cisco Networking Academy",
+      certificate:
+        "PCAP: Programming Essentials in Python provided  by Cisco Networking Academy",
+    },
+    {
+      institution: "Cisco Networking Academy",
+      certificate: "Introduction to Cybersecurity by Cisco Networking Academy",
+    },
+    {
+      institution: "Cisco Networking Academy",
+      certificate: "Introduction to IoT by Cisco Networking Academy",
+    },
+    {
+      institution: "IEEE",
+      certificate:
+        "IEEE Lebanon Entrepreneurship Summit: Smart  Sustainable Cities",
+    },
+    {
+      institution: "Udemy",
+      certificate: "Master in Microsoft Power BI Desktop and Service",
+    },
+    {
+      institution: "Udemy",
+      certificate: "MySQL Database Development Mastery",
+    },
+    {
+      institution: "Udemy",
+      certificate: "SQL Programming and MySQL",
+    },
+    {
+      institution: "Udemy",
+      certificate: "The Complete SQL Course 2021: Become a MYSQL Master",
+    },
+    {
+      institution: "Udemy",
+      certificate: "Comprehensive SQL Bootcamp : Beginner to Advanced",
+    },
+    {
+      institution: "Udemy",
+      certificate:
+        "Git from Basics to Advanced: Practical Guide for Developers",
+    },
+    {
+      institution: "Udemy",
+      certificate: "Deep Web- The complete Introduction to the hidden web",
+    },
+    {
+      institution: "Udemy",
+      certificate: "Reverse Engineering and Memory Hacking with Cheat Engine",
+    },
+    {
+      institution: "Udemy",
+      certificate: "Learn Ethical Hacking From A-Z: Beginner To Expert Course",
+    },
+    {
+      institution: "Udemy",
+      certificate: "Microsoft Power BI DAX from Scratch",
+    },
+    {
+      institution: "Udemy",
+      certificate: "Object Oriented Programming Basics to Advance  (Java OOP)",
     },
   ],
 };
@@ -306,6 +371,34 @@ const Resume = () => {
                             {item.degree}
                           </h3>
                           <h2 className="min-h-[60px]">GPA: {item.gpa}</h2>
+                          <div className="flex items-center gap-3">
+                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                            <p className="text-white/60">{item.institution}</p>
+                          </div>
+                        </li>
+                      );
+                    })}
+                    <span></span>
+                    <span className="text-accent content-start font-black">
+                      Certifications:
+                    </span>
+                    <li></li>
+                    {certifications.items.map((item, index) => {
+                      return (
+                        <li
+                          key={index}
+                          className="bg-[#232329] h-[184px] py-6
+                        px-10 rounded-xl flex flex-col justify-center  items-center lg:items-start gap-1"
+                        >
+                          <span className="text-accent">
+                            {item.certificate}
+                          </span>
+                          <h3
+                            className="text-xl max-w-[260px] 
+                          text-center lg:text-left"
+                          >
+                            {item.degree}
+                          </h3>
                           <div className="flex items-center gap-3">
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
                             <p className="text-white/60">{item.institution}</p>
