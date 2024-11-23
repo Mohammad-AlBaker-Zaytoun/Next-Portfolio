@@ -67,7 +67,8 @@ const about = {
 const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
-  decsription: "education DESCRIPTION",
+  decsription:
+    "Discover the academic milestones and certifications that have built a solid foundation for my career.",
   items: [
     {
       //1
@@ -83,7 +84,8 @@ const education = {
 const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
-  decsription: "EXPERIENCE DESCRIPTION",
+  decsription:
+    "Explore the journey of my professional growth, highlighting impactful roles and achievements that have shaped my expertise.",
   items: [
     {
       //1
@@ -145,7 +147,8 @@ const experience = {
 //skills data
 const skills = {
   title: "My skills",
-  decsription: "MY SKILLS DESC",
+  decsription:
+    "Uncover a diverse set of technical and creative skills that showcase my ability to deliver exceptional results.",
   skillList: [
     {
       icon: <FaHtml5 />,
