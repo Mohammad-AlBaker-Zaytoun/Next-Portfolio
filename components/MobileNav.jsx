@@ -4,6 +4,8 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
+import { useState } from "react"; // Import useState
+
 const links = [
   {
     name: "home",
@@ -28,15 +30,24 @@ const links = [
 ];
 
 const MobileNav = () => {
+  const [isOpen, setIsOpen] = useState(false); // State to control Sheet visibility
   const pathname = usePathname();
+
+  const handleLinkClick = () => {
+    setIsOpen(false); // Close the Sheet when a link is clicked
+  };
+
   return (
-    <Sheet>
-      <SheetTrigger className="flex justify-center items-center">
+    <Sheet open={isOpen} onOpenChange={setIsOpen}>
+      <SheetTrigger
+        className="flex justify-center items-center"
+        onClick={() => setIsOpen(true)} // Open the Sheet
+      >
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         <div className="mt-32 mb-40 text-center text-2xl">
-          <Link href="/">
+          <Link href="/" onClick={handleLinkClick}>
             <h1 className="text-4xl font-semibold">
               Mohammad<span className="text-accent">.</span>
             </h1>
@@ -48,6 +59,7 @@ const MobileNav = () => {
               <Link
                 href={link.path}
                 key={index}
+                onClick={handleLinkClick} // Close the Sheet when the link is clicked
                 className={`${
                   link.path === pathname &&
                   "text-accent border-b-2 border-accent"
