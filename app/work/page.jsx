@@ -31,6 +31,21 @@ const projects = [
   {
     num: "02",
     category: "Fullstack",
+    title: "Pancake Paradise",
+    description: "Beautiful landing page for a pancake shop startup.",
+    stack: [
+      { name: "Next.Js" },
+      { name: "Html 5" },
+      { name: "Tailwind Css" },
+      { name: "Javascript" },
+    ],
+    image: "/assets/work/panpar.png",
+    live: "https://pancake-world.vercel.app",
+    github: "https://github.com/Mohammad-AlBaker-Zaytoun/pancake-world",
+  },
+  {
+    num: "03",
+    category: "Fullstack",
     title: "Todos",
     description:
       "A todo list management web app that will make your life easier.",
@@ -45,7 +60,7 @@ const projects = [
     github: "https://github.com/Mohammad-AlBaker-Zaytoun/Todo-next-WebApp",
   },
   {
-    num: "03",
+    num: "04",
     category: "frontend",
     title: "Youtube playlist calculator",
     description: "Calculate your playlists time easily.",
@@ -56,7 +71,7 @@ const projects = [
       "https://github.com/Mohammad-AlBaker-Zaytoun/YouTube-Playlist-Calculator",
   },
   {
-    num: "04",
+    num: "05",
     category: "frontend",
     title: "Arabic Arabic Converter for Adobe",
     description:
@@ -68,7 +83,7 @@ const projects = [
       "https://github.com/Mohammad-AlBaker-Zaytoun/arabic-arabic-converter",
   },
   {
-    num: "05",
+    num: "06",
     category: "frontend",
     title: "Finite State Machine Designer",
     description: "Design your finite state machines here.",
@@ -79,7 +94,7 @@ const projects = [
       "https://github.com/Mohammad-AlBaker-Zaytoun/Finite-State-Machine-Designer",
   },
   {
-    num: "06",
+    num: "07",
     category: "Backend",
     title: "Muslim Prayers API",
     description:
@@ -88,22 +103,6 @@ const projects = [
     image: "/assets/work/mapi.jpg",
     live: "https://github.com/Mohammad-AlBaker-Zaytoun/Prayers-API",
     github: "https://github.com/Mohammad-AlBaker-Zaytoun/Prayers-API",
-  },
-
-  {
-    num: "07",
-    category: "Fullstack",
-    title: "Pancake Paradise",
-    description: "Beautiful landing page for a pancake shop startup.",
-    stack: [
-      { name: "Next.Js" },
-      { name: "Html 5" },
-      { name: "Tailwind Css" },
-      { name: "Javascript" },
-    ],
-    image: "/assets/work/panpar.png",
-    live: "https://pancake-world.vercel.app",
-    github: "https://github.com/Mohammad-AlBaker-Zaytoun/pancake-world",
   },
 ];
 
