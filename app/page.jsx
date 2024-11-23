@@ -1,3 +1,5 @@
+"use client"
+
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
@@ -5,9 +7,16 @@ import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
 const Home = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/assets/cv/mzaytoun-cv.pdf"; // Path to your CV
+    link.download = "Mohammad-Zaytoun-CV.pdf"; // Name of the downloaded file
+    link.click();
+  };
+
   return (
     <section className="h-full">
-      <div className="container mx-auto  h-full">
+      <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Full Stack Developer</span>
@@ -24,6 +33,7 @@ const Home = () => {
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
+                onClick={handleDownload} // Attach the handler to the onClick event
               >
                 <span>Download CV</span>
                 <FiDownload className="text-xl" />
