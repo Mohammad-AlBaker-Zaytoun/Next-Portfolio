@@ -279,6 +279,7 @@ const skills = {
 };
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
 import {
   Tooltip,
   TooltipContent,
@@ -306,7 +307,7 @@ const Resume = () => {
           className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList
-            className="flex flex-col w-full max-w-[380px]
+            className="flex flex-col w-full max-w-[350px]
           mx-auto xl:mx-0 gap-6"
           >
             <TabsTrigger value="experience">Experience</TabsTrigger>

@@ -26,7 +26,7 @@ const projects = [
     stack: [{ name: "Node.Js" }, { name: "MongoDB" }],
     image: "/assets/work/fe.png",
     live: "https://flyesim.net",
-    github: "https://flyesim.net",
+    github: "",
   },
   {
     num: "02",
@@ -49,13 +49,9 @@ const projects = [
     title: "VivaPain",
     description:
       "Android application that will help you in your fitniss road from food routine to workout routines with professional trainers and great system flow.",
-    stack: [
-      { name: "Node.Js" },
-      { name: "Java" },
-      { name: "MongoDB" },
-    ],
+    stack: [{ name: "Node.Js" }, { name: "Java" }, { name: "MongoDB" }],
     image: "/assets/work/vp.jpg",
-    live: "https://github.com/Mohammad-AlBaker-Zaytoun/VIVAPAINNoPainNoGain",
+    live: "",
     github: "https://github.com/Mohammad-AlBaker-Zaytoun/VIVAPAINNoPainNoGain",
   },
   {
@@ -116,7 +112,7 @@ const projects = [
       "API that will serve every muslim his prayer times, calender, hijri dates, etc.",
     stack: [{ name: "Node.Js" }],
     image: "/assets/work/mapi.jpg",
-    live: "https://github.com/Mohammad-AlBaker-Zaytoun/Prayers-API",
+    live: "",
     github: "https://github.com/Mohammad-AlBaker-Zaytoun/Prayers-API",
   },
 ];
@@ -167,30 +163,42 @@ const Work = () => {
               </ul>
               <div className="border border-white/20"></div>
               <div className="flex items-center gap-4">
-                <Link href={project.live}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Live project</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
-                <Link href={project.github}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github repository</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project.live && (
+                  <Link
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Live project</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
+                {project.github && (
+                  <Link
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Github repository</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
