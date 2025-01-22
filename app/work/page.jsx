@@ -23,13 +23,43 @@ const projects = [
     category: "Backend",
     title: "Flyesim",
     description: "Esim services provider.",
-    stack: [{ name: "Node.Js" }, { name: "MongoDB" }],
+    stack: [
+      { name: "Node.Js" },
+      { name: "MongoDB" },
+      { name: "Firebase" },
+      { name: "Supabase" },
+    ],
     image: "/assets/work/fe.png",
     live: "https://flyesim.net",
     github: "",
   },
   {
     num: "02",
+    category: "Fullstack",
+    title: "QR Menu",
+    description: "QR Menu SAAS system for rest-caffe with admin area",
+    stack: [
+      { name: "Next.Js" },
+      { name: "Firebase" },
+      { name: "Supabase" },
+      { name: "Tailwind Css" },
+    ],
+    image: "/assets/work/qm.png",
+    live: "https://qr-menu-bay.vercel.app",
+    github: "",
+  },
+  {
+    num: "03",
+    category: "Fullstack",
+    title: "Zaytoun Solutions",
+    description: "Zaytoun Solutions Landing Page",
+    stack: [{ name: "Next.Js" }, { name: "Tailwind Css" }],
+    image: "/assets/work/zs.png",
+    live: "https://zaytoun-solutions-landing-page.vercel.app",
+    github: "",
+  },
+  {
+    num: "04",
     category: "Fullstack",
     title: "Pancake Paradise",
     description: "Beautiful landing page for a pancake shop startup.",
@@ -44,7 +74,7 @@ const projects = [
     github: "https://github.com/Mohammad-AlBaker-Zaytoun/pancake-world",
   },
   {
-    num: "03",
+    num: "05",
     category: "Fullstack",
     title: "VivaPain",
     description:
@@ -55,7 +85,7 @@ const projects = [
     github: "https://github.com/Mohammad-AlBaker-Zaytoun/VIVAPAINNoPainNoGain",
   },
   {
-    num: "04",
+    num: "06",
     category: "Fullstack",
     title: "Todos",
     description:
@@ -71,7 +101,7 @@ const projects = [
     github: "https://github.com/Mohammad-AlBaker-Zaytoun/Todo-next-WebApp",
   },
   {
-    num: "05",
+    num: "07",
     category: "frontend",
     title: "Youtube playlist calculator",
     description: "Calculate your playlists time easily.",
@@ -82,7 +112,7 @@ const projects = [
       "https://github.com/Mohammad-AlBaker-Zaytoun/YouTube-Playlist-Calculator",
   },
   {
-    num: "06",
+    num: "08",
     category: "frontend",
     title: "Arabic Arabic Converter for Adobe",
     description:
@@ -94,7 +124,7 @@ const projects = [
       "https://github.com/Mohammad-AlBaker-Zaytoun/arabic-arabic-converter",
   },
   {
-    num: "07",
+    num: "09",
     category: "frontend",
     title: "Finite State Machine Designer",
     description: "Design your finite state machines here.",
@@ -105,7 +135,7 @@ const projects = [
       "https://github.com/Mohammad-AlBaker-Zaytoun/Finite-State-Machine-Designer",
   },
   {
-    num: "08",
+    num: "10",
     category: "Backend",
     title: "Muslim Prayers API",
     description:
