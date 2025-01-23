@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
