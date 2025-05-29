@@ -145,6 +145,16 @@ const projects = [
     live: "",
     github: "https://github.com/Mohammad-AlBaker-Zaytoun/Prayers-API",
   },
+  {
+    num: "11",
+    category: "Fullstack",
+    title: "Zaytoun CRS",
+    description: "Frontpage for the computer repair service zaytoun crs",
+    stack: [{ name: "Weebly" }],
+    image: "/assets/work/zcrs.png",
+    live: "https://zaitouncrs.weebly.com/",
+    github: "",
+  },
 ];
 
 const Work = () => {

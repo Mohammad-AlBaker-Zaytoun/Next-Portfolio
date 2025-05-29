@@ -6,7 +6,7 @@ import Link from "next/link";
 const services = [
   {
     num: "01",
-    title: "Web Development",
+    title: "Senior Web Development",
     description: "Turning complex challenges into elegant web solutions.",
     href: "",
   },
@@ -25,9 +25,24 @@ const services = [
   },
   {
     num: "04",
-    title: "Senior Backend Developer",
+    title: "Senior Backend Development",
     description:
       "Expert backend engineer designing and implementing efficient, high-performance APIs, leading the development of complex backend systems.",
+    href: "",
+  },
+
+  {
+    num: "05",
+    title: "Data Analysis & Analytics",
+    description:
+      "Professional responsible for collecting, interpreting, and visualizing data to help organizations make informed decisions.",
+    href: "",
+  },
+  {
+    num: "06",
+    title: "Machine Learning Engineer",
+    description:
+      "Professional who builds, trains, and deploys machine learning models to solve real-world problems.",
     href: "",
   },
 ];

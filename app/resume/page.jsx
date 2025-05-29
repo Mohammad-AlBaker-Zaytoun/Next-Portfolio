@@ -12,13 +12,14 @@ import {
   SiJupyter,
   SiInternetcomputer,
   SiGooglechrome,
+  SiPython,
 } from "react-icons/si";
 
 //about data
 const about = {
   title: "About me",
   decsription:
-    "Adaptable full-stack developer with a strong foundation in NodeJS environments (Express - NextJS - HapiJS). Proven ability to quickly learn new technologies and lead development teams. Committed to delivering high-quality, scalable, and maintainable web and android applications.",
+    "Adaptable software engineer with a strong foundation in NodeJS environments (Express - NextJS - HapiJS). Proven ability to quickly learn new technologies and lead development teams. Committed to delivering high-quality, scalable, and maintainable web and android applications. Additionally to experience and skills in Machine Learning and AI.",
   info: [
     {
       fieldName: "Name",
@@ -61,6 +62,10 @@ const certifications = {
       institution: "Cisco Networking Academy",
       certificate:
         "NDG Linux Unhatched course in the Cisco  Working in group  Public Speaking  Networking Academy",
+    },
+    {
+      institution: "Forward Mena",
+      certificate: "Advanced Full Stack Development with AI",
     },
     {
       institution: "Cisco Networking Academy",
@@ -155,7 +160,7 @@ const experience = {
     {
       //1
       company: "Protel S.A.L Offshore",
-      position: "Full Stack Developer",
+      position: "Senior Softwar Engineer",
       duration: "March 2023 - Present",
     },
     {
@@ -166,42 +171,48 @@ const experience = {
     },
     {
       //3
-      company: "Computer Repair Service",
-      position: "Owner",
-      duration: "April 2018 - Present",
+      company: "Zaytoun Solutions",
+      position: "Founder & CEO",
+      duration: "January 2025 - Present",
     },
     {
       //4
+      company: "Computer Repair Service",
+      position: "Founder",
+      duration: "April 2018 - 2025",
+    },
+    {
+      //5
       company: "Lancaster Tamar Hotel",
       position: "Head of IT Department",
       duration: "December 2022 - March 2023",
     },
     {
-      //5
+      //6
       company: "Mining Tech",
       position: "Engineering Technician",
       duration: "July 2021 - September 2022",
     },
     {
-      //6
+      //7
       company: "LouLoua TV",
       position: "Senior IT Assistant",
       duration: "July 2022 - August 2022",
     },
     {
-      //7
+      //8
       company: "Al Maaref University",
       position: "Teacher Assistant",
       duration: "February 2020 - April 2022",
     },
     {
-      //8
+      //9
       company: "Zaytoun Edits",
       position: "Graphic Designer - Freelance",
       duration: "July 2015 - September 2021",
     },
     {
-      //9
+      //10
       company: "Al Bachaer Radio Station",
       position: "Installation & Maintenance Assistant",
       duration: "June 2018 - December 2019",
@@ -274,6 +285,10 @@ const skills = {
     {
       icon: <SiGooglechrome />,
       name: "fix computers - laptops",
+    },
+    {
+      icon: <SiPython />,
+      name: "Machine Learning",
     },
   ],
 };
