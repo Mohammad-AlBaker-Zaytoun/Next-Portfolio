@@ -166,8 +166,8 @@ const experience = {
     {
       //2
       company: "Flyesim",
-      position: "Backend Development Team Lead",
-      duration: "January 2024 - Present",
+      position: "Senior Technical Consultant",
+      duration: "November 2025 - Present",
     },
     {
       //3
@@ -177,42 +177,48 @@ const experience = {
     },
     {
       //4
+      company: "Flyesim",
+      position: "Backend Development Team Lead & IS",
+      duration: "January 2024 - November 2025",
+    },
+    {
+      //5
       company: "Computer Repair Service",
       position: "Founder",
       duration: "April 2018 - 2025",
     },
     {
-      //5
+      //6
       company: "Lancaster Tamar Hotel",
       position: "Head of IT Department",
       duration: "December 2022 - March 2023",
     },
     {
-      //6
+      //7
       company: "Mining Tech",
       position: "Engineering Technician",
       duration: "July 2021 - September 2022",
     },
     {
-      //7
+      //8
       company: "LouLoua TV",
       position: "Senior IT Assistant",
       duration: "July 2022 - August 2022",
     },
     {
-      //8
+      //9
       company: "Al Maaref University",
       position: "Teacher Assistant",
       duration: "February 2020 - April 2022",
     },
     {
-      //9
+      //10
       company: "Zaytoun Edits",
       position: "Graphic Designer - Freelance",
       duration: "July 2015 - September 2021",
     },
     {
-      //10
+      //11
       company: "Al Bachaer Radio Station",
       position: "Installation & Maintenance Assistant",
       duration: "June 2018 - December 2019",
