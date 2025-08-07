@@ -1,6 +1,7 @@
 "use client";
 
 import CountUp from "react-countup";
+import { Plus } from "lucide-react";
 
 const stats = [
   {
@@ -16,8 +17,9 @@ const stats = [
     text: "Technologies mastered",
   },
   {
-    num: 500,
+    num: 600,
     text: "Code commits",
+    showPlus: true, // Add this flag to show plus icon
   },
 ];
 
@@ -35,12 +37,20 @@ const Stats = () => {
                 className="flex-1 flex gap-4 items-center justify-center xl:justify-start"
                 key={index}
               >
-                <CountUp
-                  end={item.num}
-                  duration={5}
-                  delay={2}
-                  className="text-4xl xl:text-6xl font-extrabold"
-                />
+                <div className="flex items-center">
+                  <CountUp
+                    end={item.num}
+                    duration={5}
+                    delay={2}
+                    className="text-4xl xl:text-6xl font-extrabold"
+                  />
+                  {item.showPlus && (
+                    <Plus
+                      className="w-5 h-5 xl:w-7 xl:h-7 text-white ml-1"
+                      strokeWidth={3.5}
+                    />
+                  )}
+                </div>
                 <p
                   className={`${
                     item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"
