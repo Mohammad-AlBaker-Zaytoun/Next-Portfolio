@@ -23,7 +23,7 @@ const Photo = () => {
           absolute"
         >
           <Image
-            src="/photo.png"
+            src="/mzaytoun-modified.png"
             priority
             quality={100}
             fill
