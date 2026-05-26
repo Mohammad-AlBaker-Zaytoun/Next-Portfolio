@@ -55,7 +55,7 @@ const projects = [
     description: "Zaytoun Solutions Landing Page",
     stack: [{ name: "Next.Js" }, { name: "Tailwind Css" }],
     image: "/assets/work/zs.png",
-    live: "https://zaytoun-solutions-landing-page.vercel.app",
+    live: "https://zaytounsolutions.com",
     github: "",
   },
   {

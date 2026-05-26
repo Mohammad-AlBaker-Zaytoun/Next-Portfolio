@@ -160,7 +160,7 @@ const experience = {
     {
       //1
       company: "Protel S.A.L Offshore",
-      position: "Senior Softwar Engineer",
+      position: "Senior Software Engineer",
       duration: "March 2023 - Present",
     },
     {
