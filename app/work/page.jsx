@@ -23,12 +23,15 @@ const projects = [
     category: "Fullstack",
     title: "Zaytoun Solutions",
     description:
-      "Business platform for Zaytoun Solutions: company website, e-commerce store, academy and admin back office.",
+      "Business platform for Zaytoun Solutions: company website, e-commerce store, academy and admin back office, plus the networking, Linux engineering and machine learning behind it.",
     stack: [
       { name: "Next.Js" },
       { name: "TypeScript" },
       { name: "Firebase" },
       { name: "Supabase" },
+      { name: "Networking" },
+      { name: "Linux" },
+      { name: "Machine Learning" },
     ],
     image: "/assets/work/zaytoun-solutions.jpg",
     live: "https://zaytounsolutions.com",
@@ -46,8 +49,8 @@ const projects = [
       { name: "Node.Js" },
       { name: "Ubuntu" },
     ],
-    image: "/assets/work/cpaas-platform.jpg",
-    live: "",
+    image: "/assets/work/cpaas-dashboard.jpg",
+    live: "https://cpaas.cerqle.ai/cpaas/",
     github: "",
   },
   {
@@ -92,12 +95,14 @@ const projects = [
     num: "06",
     category: "Fullstack",
     title: "HR System",
-    description: "Full-stack human resources system built at Protel.",
+    description:
+      "Full-stack human resources system built at Protel, with a C# integration that connects to hardware such as check-in machines over TCP.",
     stack: [
       { name: "PHP" },
       { name: "PHPRunner" },
       { name: "SQL Server" },
       { name: "Node.Js" },
+      { name: "C#" },
     ],
     image: "/assets/work/hr-system.jpg",
     live: "",
