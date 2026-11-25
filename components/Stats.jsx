@@ -5,19 +5,21 @@ import { Plus } from "lucide-react";
 
 const stats = [
   {
-    num: 5,
+    num: 8,
     text: "Years of experience",
+    showPlus: true,
   },
   {
-    num: 31,
+    num: 50,
     text: "Projects Completed",
+    showPlus: true,
   },
   {
-    num: 4,
+    num: 20,
     text: "Technologies mastered",
   },
   {
-    num: 600,
+    num: 6000,
     text: "Code commits",
     showPlus: true, // Add this flag to show plus icon
   },
@@ -40,6 +42,7 @@ const Stats = () => {
                 <div className="flex items-center">
                   <CountUp
                     end={item.num}
+                    separator=","
                     duration={5}
                     delay={2}
                     className="text-4xl xl:text-6xl font-extrabold"
