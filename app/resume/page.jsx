@@ -1,10 +1,21 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaJs, FaNodeJs, FaJava, FaPhp } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaJava,
+  FaPhp,
+} from "react-icons/fa";
 
 import {
   SiTailwindcss,
   SiNextdotjs,
+  SiTypescript,
+  SiFlutter,
+  SiFirebase,
   SiMicrosoftsqlserver,
   SiMysql,
   SiSqlite,
@@ -31,11 +42,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "5+ Years",
-    },
-    {
-      fieldName: "Skype",
-      fieldValue: "Mohammad Zaytoun",
+      fieldValue: "8+ Years",
     },
     {
       fieldName: "Nationality",
@@ -50,7 +57,7 @@ const about = {
       fieldValue: "Available",
     },
     {
-      fieldName: "Langauges",
+      fieldName: "Languages",
       fieldValue: "English, Arabic",
     },
   ],
@@ -245,8 +252,24 @@ const skills = {
       name: "javascript",
     },
     {
+      icon: <SiTypescript />,
+      name: "typescript",
+    },
+    {
+      icon: <FaReact />,
+      name: "react",
+    },
+    {
       icon: <SiNextdotjs />,
       name: "next.js",
+    },
+    {
+      icon: <SiFlutter />,
+      name: "flutter",
+    },
+    {
+      icon: <SiFirebase />,
+      name: "firebase",
     },
     {
       icon: <SiTailwindcss />,

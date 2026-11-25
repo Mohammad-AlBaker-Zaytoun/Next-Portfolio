@@ -20,6 +20,103 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
+    category: "Fullstack",
+    title: "Zaytoun Solutions",
+    description:
+      "Business platform for Zaytoun Solutions: company website, e-commerce store, academy and admin back office.",
+    stack: [
+      { name: "Next.Js" },
+      { name: "TypeScript" },
+      { name: "Firebase" },
+      { name: "Supabase" },
+    ],
+    image: "/assets/work/zaytoun-solutions.png",
+    live: "https://zaytounsolutions.com",
+    github: "",
+  },
+  {
+    num: "02",
+    category: "Backend",
+    title: "CPaaS Platform",
+    description:
+      "Communications platform at Protel for business messaging over WhatsApp, Messenger and Instagram, with flows, ticketing and reseller accounts.",
+    stack: [{ name: "PHP" }, { name: "SQL Server" }, { name: "Node.Js" }],
+    image: "/assets/work/cpaas.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "03",
+    category: "Fullstack",
+    title: "Soléna",
+    description:
+      "Skincare e-commerce store with subscriptions, Whish payments, newsletters and a full admin dashboard.",
+    stack: [{ name: "Next.Js" }, { name: "Firebase" }, { name: "Supabase" }],
+    image: "/assets/work/solena.png",
+    live: "https://www.mysolena.com",
+    github: "",
+  },
+  {
+    num: "04",
+    category: "Fullstack",
+    title: "Pro Tuning",
+    description:
+      "Car performance tuning store with a product catalog, cart, quote requests, order tracking and an admin dashboard.",
+    stack: [
+      { name: "Next.Js" },
+      { name: "TypeScript" },
+      { name: "Tailwind Css" },
+    ],
+    image: "/assets/work/protuning.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "05",
+    category: "Mobile",
+    title: "Zaytoun Store App",
+    description:
+      "Flutter shopping app for Zaytoun Store on Android and iOS: catalog, search, favorites and a saved cart.",
+    stack: [{ name: "Flutter" }, { name: "Dart" }],
+    image: "/assets/work/zstoreapp.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "06",
+    category: "Open source",
+    title: "whish-pay",
+    description:
+      "Type-safe Node.js SDK for Whish Money payments, published on npm. Zero dependencies, works with any framework.",
+    stack: [{ name: "TypeScript" }, { name: "Node.Js" }],
+    image: "/assets/work/whishpay.png",
+    live: "https://www.npmjs.com/package/whish-pay",
+    github: "https://github.com/Mohammad-AlBaker-Zaytoun/whish-pay",
+  },
+  {
+    num: "07",
+    category: "Open source",
+    title: "icarry-sdk",
+    description:
+      "Type-safe client for the iCarry shipping API, published on npm: rates, shipments, tracking and payments.",
+    stack: [{ name: "TypeScript" }, { name: "Node.Js" }],
+    image: "/assets/work/icarry.png",
+    live: "https://www.npmjs.com/package/icarry-sdk",
+    github: "https://github.com/Mohammad-AlBaker-Zaytoun/icarry-sdk",
+  },
+  {
+    num: "08",
+    category: "Open source",
+    title: "olx-lebanon-sdk",
+    description:
+      "SDK, CLI and REST service for posting and managing your own OLX Lebanon ads from Node.js, published on npm.",
+    stack: [{ name: "TypeScript" }, { name: "Node.Js" }],
+    image: "/assets/work/olx.png",
+    live: "https://www.npmjs.com/package/olx-lebanon-sdk",
+    github: "https://github.com/Mohammad-AlBaker-Zaytoun/olx-lebanon-sdk",
+  },
+  {
+    num: "09",
     category: "Backend",
     title: "Flyesim",
     description: "Esim services provider.",
@@ -34,7 +131,7 @@ const projects = [
     github: "",
   },
   {
-    num: "02",
+    num: "10",
     category: "Fullstack",
     title: "QR Menu",
     description: "QR Menu SAAS system for rest-caffe with admin area",
@@ -49,17 +146,7 @@ const projects = [
     github: "",
   },
   {
-    num: "03",
-    category: "Fullstack",
-    title: "Zaytoun Solutions",
-    description: "Zaytoun Solutions Landing Page",
-    stack: [{ name: "Next.Js" }, { name: "Tailwind Css" }],
-    image: "/assets/work/zs.png",
-    live: "https://zaytounsolutions.com",
-    github: "",
-  },
-  {
-    num: "04",
+    num: "11",
     category: "Fullstack",
     title: "Pancake Paradise",
     description: "Beautiful landing page for a pancake shop startup.",
@@ -74,7 +161,7 @@ const projects = [
     github: "https://github.com/Mohammad-AlBaker-Zaytoun/pancake-world",
   },
   {
-    num: "05",
+    num: "12",
     category: "Fullstack",
     title: "VivaPain",
     description:
@@ -85,7 +172,7 @@ const projects = [
     github: "https://github.com/Mohammad-AlBaker-Zaytoun/VIVAPAINNoPainNoGain",
   },
   {
-    num: "06",
+    num: "13",
     category: "Fullstack",
     title: "Todos",
     description:
@@ -101,9 +188,9 @@ const projects = [
     github: "https://github.com/Mohammad-AlBaker-Zaytoun/Todo-next-WebApp",
   },
   {
-    num: "07",
+    num: "14",
     category: "frontend",
-    title: "Youtube playlist calculator",
+    title: "YouTube Playlist Calculator",
     description: "Calculate your playlists time easily.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
     image: "/assets/work/ytc.png",
@@ -112,7 +199,7 @@ const projects = [
       "https://github.com/Mohammad-AlBaker-Zaytoun/YouTube-Playlist-Calculator",
   },
   {
-    num: "08",
+    num: "15",
     category: "frontend",
     title: "Arabic Arabic Converter for Adobe",
     description:
@@ -124,7 +211,7 @@ const projects = [
       "https://github.com/Mohammad-AlBaker-Zaytoun/arabic-arabic-converter",
   },
   {
-    num: "09",
+    num: "16",
     category: "frontend",
     title: "Finite State Machine Designer",
     description: "Design your finite state machines here.",
@@ -135,7 +222,7 @@ const projects = [
       "https://github.com/Mohammad-AlBaker-Zaytoun/Finite-State-Machine-Designer",
   },
   {
-    num: "10",
+    num: "17",
     category: "Backend",
     title: "Muslim Prayers API",
     description:
@@ -146,7 +233,7 @@ const projects = [
     github: "https://github.com/Mohammad-AlBaker-Zaytoun/Prayers-API",
   },
   {
-    num: "11",
+    num: "18",
     category: "Fullstack",
     title: "Zaytoun CRS",
     description: "Frontpage for the computer repair service zaytoun crs",
@@ -184,14 +271,14 @@ const Work = () => {
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
               </div>
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
                 {project.title}
               </h2>
               <h3 className="capitalize leading-none text-white group-hover:text-accent transition-all duration-500 -mt-3 mb-2">
                 {project.category} Project
               </h3>
               <p className="text-white/60">{project.description}</p>
-              <ul className="flex gap-4">
+              <ul className="flex flex-wrap gap-x-4 gap-y-1">
                 {project.stack.map((item, index) => {
                   return (
                     <li key={index} className="text-xl text-accent">
