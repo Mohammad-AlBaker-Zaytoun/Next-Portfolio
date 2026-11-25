@@ -30,7 +30,7 @@ const projects = [
       { name: "Firebase" },
       { name: "Supabase" },
       { name: "Networking" },
-      { name: "Linux" },
+      { name: "Linux Engineering" },
       { name: "Machine Learning" },
     ],
     image: "/assets/work/zaytoun-solutions.jpg",
