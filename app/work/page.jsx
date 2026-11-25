@@ -52,6 +52,75 @@ const projects = [
   },
   {
     num: "03",
+    category: "Backend",
+    title: "SMS & WhatsApp OTP Service",
+    description:
+      "One-time password service at Protel that sends verification codes over SMS and WhatsApp, integrated with banks.",
+    stack: [{ name: "Node.Js" }, { name: "PHP" }, { name: "SQL Server" }],
+    image: "/assets/work/otp-service.jpg",
+    live: "",
+    github: "",
+  },
+  {
+    num: "04",
+    category: "Fullstack",
+    title: "Ticketing System",
+    description:
+      "Live ticketing system at Protel for managing tickets between telecom carriers, with SMTP integration, live email monitoring with AI classification of incoming tickets, and a dashboard.",
+    stack: [
+      { name: "PHPRunner" },
+      { name: "PHP" },
+      { name: "SQL Server" },
+      { name: "AI" },
+    ],
+    image: "/assets/work/ticketing-system.jpg",
+    live: "",
+    github: "",
+  },
+  {
+    num: "05",
+    category: "Fullstack",
+    title: "Voucher Platform",
+    description:
+      "Voucher platform built at Protel for Syriatel, similar to the Whish Money app.",
+    stack: [{ name: "PHP" }, { name: "SQL Server" }],
+    image: "/assets/work/voucher-platform.jpg",
+    live: "",
+    github: "",
+  },
+  {
+    num: "06",
+    category: "Fullstack",
+    title: "HR System",
+    description: "Full-stack human resources system built at Protel.",
+    stack: [
+      { name: "PHP" },
+      { name: "PHPRunner" },
+      { name: "SQL Server" },
+      { name: "Node.Js" },
+    ],
+    image: "/assets/work/hr-system.jpg",
+    live: "",
+    github: "",
+  },
+  {
+    num: "07",
+    category: "Fullstack",
+    title: "FlashCalls Prevention",
+    description:
+      "Call firewall at Protel that automatically checks calls for spam, fraud and flash calls and blocks them, with SMTP, SMS and VoIP integration.",
+    stack: [
+      { name: "PHP" },
+      { name: "SQL Server" },
+      { name: "Ubuntu" },
+      { name: "VoIP" },
+    ],
+    image: "/assets/work/flashcalls-prevention.jpg",
+    live: "",
+    github: "",
+  },
+  {
+    num: "08",
     category: "Fullstack",
     title: "Soléna",
     description:
@@ -62,7 +131,7 @@ const projects = [
     github: "",
   },
   {
-    num: "04",
+    num: "09",
     category: "Fullstack",
     title: "Pro Tuning",
     description:
@@ -72,12 +141,12 @@ const projects = [
       { name: "TypeScript" },
       { name: "Tailwind Css" },
     ],
-    image: "/assets/work/pro-tuning.jpg",
-    live: "",
+    image: "/assets/work/pro-tuning-shop.jpg",
+    live: "https://protuningshop.com",
     github: "",
   },
   {
-    num: "05",
+    num: "10",
     category: "Mobile",
     title: "Zaytoun Store App",
     description:
@@ -88,7 +157,7 @@ const projects = [
     github: "",
   },
   {
-    num: "06",
+    num: "11",
     category: "Open source",
     title: "whish-pay",
     description:
@@ -99,7 +168,7 @@ const projects = [
     github: "https://github.com/Mohammad-AlBaker-Zaytoun/whish-pay",
   },
   {
-    num: "07",
+    num: "12",
     category: "Open source",
     title: "icarry-sdk",
     description:
@@ -110,7 +179,7 @@ const projects = [
     github: "https://github.com/Mohammad-AlBaker-Zaytoun/icarry-sdk",
   },
   {
-    num: "08",
+    num: "13",
     category: "Open source",
     title: "olx-lebanon-sdk",
     description:
@@ -121,7 +190,7 @@ const projects = [
     github: "https://github.com/Mohammad-AlBaker-Zaytoun/olx-lebanon-sdk",
   },
   {
-    num: "09",
+    num: "14",
     category: "Backend",
     title: "Flyesim",
     description: "Esim services provider.",
@@ -136,7 +205,7 @@ const projects = [
     github: "",
   },
   {
-    num: "10",
+    num: "15",
     category: "Fullstack",
     title: "QR Menu",
     description: "QR Menu SAAS system for rest-caffe with admin area",
@@ -151,7 +220,7 @@ const projects = [
     github: "",
   },
   {
-    num: "11",
+    num: "16",
     category: "Fullstack",
     title: "Pancake Paradise",
     description: "Beautiful landing page for a pancake shop startup.",
@@ -166,7 +235,7 @@ const projects = [
     github: "https://github.com/Mohammad-AlBaker-Zaytoun/pancake-world",
   },
   {
-    num: "12",
+    num: "17",
     category: "Fullstack",
     title: "VivaPain",
     description:
@@ -177,7 +246,7 @@ const projects = [
     github: "https://github.com/Mohammad-AlBaker-Zaytoun/VIVAPAINNoPainNoGain",
   },
   {
-    num: "13",
+    num: "18",
     category: "Fullstack",
     title: "Todos",
     description:
@@ -193,7 +262,7 @@ const projects = [
     github: "https://github.com/Mohammad-AlBaker-Zaytoun/Todo-next-WebApp",
   },
   {
-    num: "14",
+    num: "19",
     category: "frontend",
     title: "YouTube Playlist Calculator",
     description: "Calculate your playlists time easily.",
@@ -204,7 +273,7 @@ const projects = [
       "https://github.com/Mohammad-AlBaker-Zaytoun/YouTube-Playlist-Calculator",
   },
   {
-    num: "15",
+    num: "20",
     category: "frontend",
     title: "Arabic Arabic Converter for Adobe",
     description:
@@ -216,7 +285,7 @@ const projects = [
       "https://github.com/Mohammad-AlBaker-Zaytoun/arabic-arabic-converter",
   },
   {
-    num: "16",
+    num: "21",
     category: "frontend",
     title: "Finite State Machine Designer",
     description: "Design your finite state machines here.",
@@ -227,7 +296,7 @@ const projects = [
       "https://github.com/Mohammad-AlBaker-Zaytoun/Finite-State-Machine-Designer",
   },
   {
-    num: "17",
+    num: "22",
     category: "Backend",
     title: "Muslim Prayers API",
     description:
@@ -238,7 +307,7 @@ const projects = [
     github: "https://github.com/Mohammad-AlBaker-Zaytoun/Prayers-API",
   },
   {
-    num: "18",
+    num: "23",
     category: "Fullstack",
     title: "Zaytoun CRS",
     description: "Frontpage for the computer repair service zaytoun crs",
