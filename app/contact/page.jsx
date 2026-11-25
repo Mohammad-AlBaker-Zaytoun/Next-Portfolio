@@ -15,6 +15,9 @@ import {
 } from "@/components/ui/select";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { services, OTHER_SERVICE } from "@/lib/services";
+
+const serviceOptions = [...services.map((s) => s.title), OTHER_SERVICE];
 
 const info = [
   {
@@ -48,6 +51,16 @@ const Contact = () => {
   const [alertType, setAlertType] = useState(""); // To differentiate success or error
   const [isSubmitting, setIsSubmitting] = useState(false); // To handle button locking
 
+  // pre-select the service when arriving from a Services page arrow
+  useEffect(() => {
+    const requested = new URLSearchParams(window.location.search).get(
+      "service"
+    );
+    if (requested && serviceOptions.includes(requested)) {
+      setFormData((prev) => ({ ...prev, service: requested }));
+    }
+  }, []);
+
   useEffect(() => {
     if (alert) {
       const timer = setTimeout(() => {
@@ -72,7 +85,10 @@ const Contact = () => {
   };
 
   const handleSelectChange = (value) => {
-    setFormData({ ...formData, service: value });
+    // Radix's hidden native select can report "" while options mount;
+    // ignore it so a pre-selected service isn't wiped
+    if (!value) return;
+    setFormData((prev) => ({ ...prev, service: value }));
   };
 
   const validateForm = () => {
@@ -194,31 +210,21 @@ const Contact = () => {
                   onChange={handleInputChange}
                 />
               </div>
-              <Select onValueChange={handleSelectChange}>
+              <Select
+                value={formData.service}
+                onValueChange={handleSelectChange}
+              >
                 <SelectTrigger className="w-full">
-                  <SelectValue
-                    placeholder="Select a service"
-                    value={formData.service}
-                  />
+                  <SelectValue placeholder="Select a service" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="Web Development">
-                      Web Development
-                    </SelectItem>
-                    <SelectItem value="Android Development">
-                      Android Development
-                    </SelectItem>
-                    <SelectItem value="Backend Development">
-                      Backend Development
-                    </SelectItem>
-                    <SelectItem value="IT Administration">
-                      IT Administration
-                    </SelectItem>
-                    <SelectItem value="Technical Support">
-                      Technical Support
-                    </SelectItem>
+                    {serviceOptions.map((option) => (
+                      <SelectItem key={option} value={option}>
+                        {option}
+                      </SelectItem>
+                    ))}
                   </SelectGroup>
                 </SelectContent>
               </Select>
