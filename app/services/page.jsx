@@ -2,52 +2,81 @@
 
 import { BsArrowDownRight } from "react-icons/bs";
 import Link from "next/link";
+import { Fragment } from "react";
 
 const services = [
   {
     num: "01",
-    title: "Senior Web Development",
-    description: "Turning complex challenges into elegant web solutions.",
-    href: "",
+    title: "Full-Stack Web Development",
+    description:
+      "Next.js and React front ends with Node.js or PHP back ends, from landing pages to complete e-commerce platforms.",
+    href: "/contact",
   },
   {
     num: "02",
-    title: "Android Native Development",
-    description: "Crafting seamless, native Android apps with Java.",
-    href: "",
+    title: "Mobile App Development",
+    description:
+      "Flutter apps for Android and iOS, plus native Android development in Java.",
+    href: "/contact",
   },
   {
     num: "03",
-    title: "Information Technology Administrator",
+    title: "Backend, APIs & Databases",
     description:
-      "Experienced IT professional providing technical support and network administration services.",
-    href: "",
+      "Fast, reliable APIs, system integrations and SQL Server databases, including stored procedures, triggers and performance tuning.",
+    href: "/contact",
   },
   {
     num: "04",
-    title: "Senior Backend Development",
+    title: "Messaging & CPaaS Integrations",
     description:
-      "Expert backend engineer designing and implementing efficient, high-performance APIs, leading the development of complex backend systems.",
-    href: "",
+      "WhatsApp Cloud API, Messenger and Instagram, SMS and OTP, and VoIP, built for businesses and banks.",
+    href: "/contact",
   },
-
   {
     num: "05",
-    title: "Data Analysis & Analytics",
+    title: "Linux Servers & Networking",
     description:
-      "Professional responsible for collecting, interpreting, and visualizing data to help organizations make informed decisions.",
-    href: "",
+      "Ubuntu servers, deployments and networking, set up and kept running smoothly.",
+    href: "/contact",
   },
   {
     num: "06",
-    title: "Machine Learning Engineer",
+    title: "Payments & E-commerce Integrations",
     description:
-      "Professional who builds, trains, and deploys machine learning models to solve real-world problems.",
-    href: "",
+      "Payment, shipping and marketplace integrations such as Whish, iCarry and OLX, backed by my own open-source SDKs.",
+    href: "/contact",
+  },
+  {
+    num: "07",
+    title: "AI & Machine Learning",
+    description:
+      "AI features inside real products, such as automatic ticket classification and smart assistants, plus data analysis.",
+    href: "/contact",
+  },
+  {
+    num: "08",
+    title: "Technical Consulting",
+    description:
+      "Architecture reviews, performance fixes and technical guidance for development teams.",
+    href: "/contact",
   },
 ];
 
 import { motion } from "framer-motion";
+
+// keep hyphenated words (e.g. "E-commerce", "Full-Stack") on one line
+const keepHyphenatedWords = (title) =>
+  title.split(" ").map((word, i, words) => (
+    <Fragment key={i}>
+      {word.includes("-") ? (
+        <span className="whitespace-nowrap">{word}</span>
+      ) : (
+        word
+      )}
+      {i < words.length - 1 ? " " : ""}
+    </Fragment>
+  ));
 
 const Services = () => {
   return (
@@ -73,6 +102,7 @@ const Services = () => {
                   </div>
                   <Link
                     href={service.href}
+                    aria-label={`Contact me about ${service.title}`}
                     className="w-[70px] h-[70px] rounded-full
                   bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
                   >
@@ -80,7 +110,7 @@ const Services = () => {
                   </Link>
                 </div>
                 <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
-                  {service.title}
+                  {keepHyphenatedWords(service.title)}
                 </h2>
                 <p className="text-white/60">{service.description}</p>
                 <div className="border-b border-white/20 w-full"></div>
