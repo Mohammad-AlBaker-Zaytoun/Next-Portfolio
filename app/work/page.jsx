@@ -55,7 +55,7 @@ const projects = [
     category: "Backend",
     title: "SMS & WhatsApp OTP Service",
     description:
-      "One-time password service at Protel that sends verification codes over SMS and WhatsApp, integrated with banks for secure customer verification.",
+      "One-time password service at Protel that sends verification codes over SMS and WhatsApp, integrated with banks.",
     stack: [{ name: "Node.Js" }, { name: "PHP" }, { name: "SQL Server" }],
     image: "/assets/work/otp-service.jpg",
     live: "",
@@ -66,7 +66,7 @@ const projects = [
     category: "Fullstack",
     title: "Ticketing System",
     description:
-      "Ticketing system at Protel for issues between telecom carriers, with live email monitoring over SMTP, AI classification of incoming tickets and a live dashboard.",
+      "Live ticketing system at Protel for managing tickets between telecom carriers, with SMTP integration, live email monitoring with AI classification of incoming tickets, and a dashboard.",
     stack: [
       { name: "PHPRunner" },
       { name: "PHP" },
@@ -82,7 +82,7 @@ const projects = [
     category: "Fullstack",
     title: "Voucher Platform",
     description:
-      "Voucher and wallet platform built at Protel for Syriatel, similar to the Whish Money app.",
+      "Voucher platform built at Protel for Syriatel, similar to the Whish Money app.",
     stack: [{ name: "PHP" }, { name: "SQL Server" }],
     image: "/assets/work/voucher-platform.jpg",
     live: "",
