@@ -39,7 +39,7 @@ const projects = [
     category: "Fullstack",
     title: "CPaaS Platform",
     description:
-      "Communications platform at Protel for business messaging over WhatsApp, Messenger and Instagram. Full-stack development plus the networking and Ubuntu server engineering behind it: flows, ticketing and reseller accounts.",
+      "Communications platform at Protel for business messaging over WhatsApp, Messenger and Instagram, with flows, ticketing and reseller accounts. Full-stack development plus the networking and Ubuntu server engineering behind it.",
     stack: [
       { name: "PHP" },
       { name: "SQL Server" },
@@ -170,7 +170,7 @@ const projects = [
     category: "Fullstack",
     title: "VivaPain",
     description:
-      "Android application that will help you in your fitniss road from food routine to workout routines with professional trainers and great system flow.",
+      "Android application that will help you in your fitness road from food routine to workout routines with professional trainers and great system flow.",
     stack: [{ name: "Node.Js" }, { name: "Java" }, { name: "MongoDB" }],
     image: "/assets/work/vivapain.jpg",
     live: "",
@@ -231,7 +231,7 @@ const projects = [
     category: "Backend",
     title: "Muslim Prayers API",
     description:
-      "API that will serve every muslim his prayer times, calender, hijri dates, etc.",
+      "API that will serve every Muslim his prayer times, calendar, Hijri dates, etc.",
     stack: [{ name: "Node.Js" }],
     image: "/assets/work/prayers-api.jpg",
     live: "",
@@ -345,7 +345,7 @@ const Work = () => {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-gull">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50-20">
+                    <div className="aspect-[1200/944] xl:aspect-auto xl:h-[460px] relative group flex justify-center items-center">
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       <div className="relative w-full h-full">
                         <Image
