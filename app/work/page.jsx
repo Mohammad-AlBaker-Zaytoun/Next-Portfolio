@@ -30,7 +30,7 @@ const projects = [
       { name: "Firebase" },
       { name: "Supabase" },
     ],
-    image: "/assets/work/zs.png",
+    image: "/assets/work/zaytoun-solutions.png",
     live: "https://zaytounsolutions.com",
     github: "",
   },
@@ -190,7 +190,7 @@ const projects = [
   {
     num: "14",
     category: "frontend",
-    title: "Youtube playlist calculator",
+    title: "YouTube Playlist Calculator",
     description: "Calculate your playlists time easily.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
     image: "/assets/work/ytc.png",
@@ -271,14 +271,14 @@ const Work = () => {
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
               </div>
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
                 {project.title}
               </h2>
               <h3 className="capitalize leading-none text-white group-hover:text-accent transition-all duration-500 -mt-3 mb-2">
                 {project.category} Project
               </h3>
               <p className="text-white/60">{project.description}</p>
-              <ul className="flex gap-4">
+              <ul className="flex flex-wrap gap-x-4 gap-y-1">
                 {project.stack.map((item, index) => {
                   return (
                     <li key={index} className="text-xl text-accent">

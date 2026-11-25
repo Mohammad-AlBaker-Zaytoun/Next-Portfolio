@@ -14,9 +14,35 @@ const JETBRAINSMONO = JetBrains_Mono({
   variable: "--font-jetbrainsMono",
 });
 
+const siteTitle = "Mohammad Zaytoun | Senior Software Engineer";
+const siteDescription =
+  "Senior Software Engineer in Beirut, Lebanon and founder of Zaytoun Solutions. 8+ years building web, mobile and backend systems with Next.js, Node.js, PHP, Flutter and SQL Server.";
+
 export const metadata = {
-  title: "mzaytoun portfolio",
-  description: "Welcome to my portfolio!",
+  metadataBase: new URL("https://www.zaytoun.dev"),
+  title: siteTitle,
+  description: siteDescription,
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    url: "/",
+    siteName: "Mohammad Zaytoun",
+    type: "website",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Mohammad Zaytoun, Senior Software Engineer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: ["/og.png"],
+  },
 };
 
 export default function RootLayout({ children }) {
