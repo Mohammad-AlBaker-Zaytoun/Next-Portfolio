@@ -2,6 +2,7 @@
 
 import CountUp from "react-countup";
 import { Plus } from "lucide-react";
+import { skillNames } from "@/lib/skill-names";
 
 const stats = [
   {
@@ -15,7 +16,7 @@ const stats = [
     showPlus: true,
   },
   {
-    num: 20,
+    num: skillNames.length,
     text: "Technologies mastered",
   },
   {
