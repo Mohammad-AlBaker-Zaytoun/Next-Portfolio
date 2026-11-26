@@ -111,7 +111,7 @@ const Resume = () => {
                     <h4 className="text-2xl font-bold text-accent">
                       Certifications
                     </h4>
-                    <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[20px]">
+                    <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                       {certifications.map((item, index) => (
                         <Card key={index}>
                           <h3 className="text-lg">{item.certificate}</h3>
