@@ -14,9 +14,9 @@ const JETBRAINSMONO = JetBrains_Mono({
   variable: "--font-jetbrainsMono",
 });
 
-const siteTitle = "Mohammad Zaytoun | Senior Software Engineer";
+const siteTitle = "Mohammad Zaytoun | Senior Software Engineer & Team Lead";
 const siteDescription =
-  "Senior Software Engineer in Beirut, Lebanon and founder of Zaytoun Solutions. 8+ years building web, mobile and backend systems with Next.js, Node.js, PHP, Flutter and SQL Server.";
+  "Senior software engineer and team lead in Lebanon. 8+ years building messaging platforms (WhatsApp, Instagram, SMS) and full-stack products with Laravel, Next.js, Node.js and SQL Server. Open to full-time remote roles.";
 
 export const metadata = {
   metadataBase: new URL("https://www.zaytoun.dev"),
