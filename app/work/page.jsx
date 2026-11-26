@@ -21,6 +21,25 @@ const projects = [
   {
     num: "01",
     category: "Fullstack",
+    title: "CPaaS Platform",
+    description:
+      "Omni-channel communications platform at Protel for business messaging over WhatsApp, Messenger, Instagram, SMS and VoIP, with flows, campaigns, ticketing and reseller accounts. I led and mentored a team of about 25 engineers, rebuilt WhatsApp Campaigns to send to millions of recipients reliably, and built the internal Meta microservices with Laravel and Docker.",
+    stack: [
+      { name: "PHP" },
+      { name: "Laravel" },
+      { name: "Docker" },
+      { name: "Node.Js" },
+      { name: "SQL Server" },
+      { name: "Meta APIs" },
+      { name: "Ubuntu" },
+    ],
+    image: "/assets/work/cpaas-dashboard.jpg",
+    live: "https://cpaas.cerqle.ai/cpaas/",
+    github: "",
+  },
+  {
+    num: "02",
+    category: "Fullstack",
     title: "Zaytoun Solutions",
     description:
       "Business platform for Zaytoun Solutions: company website, e-commerce store, academy and admin back office, plus the networking, Linux engineering and machine learning behind it.",
@@ -35,22 +54,6 @@ const projects = [
     ],
     image: "/assets/work/zaytoun-solutions.jpg",
     live: "https://zaytounsolutions.com",
-    github: "",
-  },
-  {
-    num: "02",
-    category: "Fullstack",
-    title: "CPaaS Platform",
-    description:
-      "Communications platform at Protel for business messaging over WhatsApp, Messenger and Instagram, with flows, ticketing and reseller accounts. Full-stack development plus the networking and Ubuntu server engineering behind it.",
-    stack: [
-      { name: "PHP" },
-      { name: "SQL Server" },
-      { name: "Node.Js" },
-      { name: "Ubuntu" },
-    ],
-    image: "/assets/work/cpaas-dashboard.jpg",
-    live: "https://cpaas.cerqle.ai/cpaas/",
     github: "",
   },
   {
